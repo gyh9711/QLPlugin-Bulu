@@ -3,7 +3,7 @@
 >`功能：采集深圳2步路户外网站活动信息`
 
 # 安装
-composer require gyh9711/
+composer require gyh9711/ql-plugin-bulu
 
 # 应用实例
 
