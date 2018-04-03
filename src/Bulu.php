@@ -4,7 +4,7 @@
  * User: gyh9711 <63453409@qq.com>
  * Date: 2018/4/2
  */
-namespace QL\Ext\t;
+namespace QL\Ext;
 use QL\Contracts\PluginContract;
 use QL\QueryList;
 
