@@ -1,0 +1,22 @@
+{
+    "name": "gyh9711/ql-plugin-bulu",
+    "description": "QueryList采集 www.2bulu.com活动数据插件",
+    "license": "MIT",
+    "author": [
+        {
+            "name": "gyh9711",
+            "email": "gyh9711@163.com",
+			"homepage": "http://www.zhaiyu2015.cn",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+		"php": ">=5.6",
+        "jaeger/querylist": "^4.0.0"
+    },
+	"autoload": {
+        "files": [
+            "src/Bulu.php"
+        ]
+    }
+}

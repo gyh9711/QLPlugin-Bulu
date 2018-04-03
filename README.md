@@ -32,7 +32,7 @@ print_r($bulu->page());  //获取指定页数数据
 ```
 结果如下：
 
-```
+```shell
 ..........
   14 => array:13 [
     "img_url" => "https://down-files.2bulu.com/f/d1?downParams=AoAp0uzlhNdS8aXDcwFqZg%3D%3D%0A"
@@ -54,3 +54,6 @@ print_r($bulu->page());  //获取指定页数数据
 ```
 
 # 参考
+
++ [phpQuery](http://code.google.com/p/phpquery/)
++ [QueryList](https://github.com/jae-jae/QueryList) ---[QueryList中文介绍](https://github.com/jae-jae/QueryList/blob/master/README-ZH.md)
