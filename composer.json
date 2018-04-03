@@ -6,17 +6,17 @@
         {
             "name": "gyh9711",
             "email": "gyh9711@163.com"
+			"homepage": "http://www.zhaiyu2015.cn",
+            "role": "Developer"
         }
     ],
     "require": {
 		"php": ">=5.6",
         "jaeger/querylist": "^4.0.0"
     },
-    "require-dev": {
-    },
-    "autoload": {
-        "psr-4": {
-            "liesauer\\":"src/"
-        }
+	"autoload": {
+        "files": [
+            "src/Bulu.php"
+        ]
     }
 }
