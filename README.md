@@ -53,6 +53,24 @@ print_r($bulu->page());  //获取指定页数数据
 
 ```
 
+```php
+include "vendor/autoload.php";
+
+include "vendor/QLPlugin-Bulu-master/src/Bulu.php";
+
+use QL\QueryList;
+
+use QL\Ext\Bulu;  //我的扩展
+
+$ql = QueryList::getInstance();
+$ql->use(Bulu::class,'bulu');
+$bulu = $ql->bulu();
+var_dump( $bulu->getPageInfo());
+
+
+```
+
+
 # 参考
 
 + [phpQuery](http://code.google.com/p/phpquery/)

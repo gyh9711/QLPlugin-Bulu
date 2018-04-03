@@ -8,6 +8,21 @@ namespace QL\Ext;
 use QL\Contracts\PluginContract;
 use QL\QueryList;
 
+
+/** 兼容key没有双引括起来的JSON字符串解析
+* @param String $str JSON字符串
+* @param boolean $mod true:Array,false:Object
+* @return Array/Object
+*/
+if (!function_exists('ext_json_decode')) {
+	function ext_json_decode($str, $mode=false){
+	  if(preg_match('/\w:/', $str)){
+		$str = preg_replace('/(\w+):/is', '"$1":', $str);
+	  }
+	  return json_decode($str, $mode);
+	}
+}
+
 /**
  * QueryList扩展插件
  * @desc 2bulu.com动态数据采集插件
